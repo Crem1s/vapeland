@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto | Vapeland</title>
+    <link rel="shortcut icon" href="../media/images/imagen-icono.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/contacto.css">
+    <script src="https://kit.fontawesome.com/e7d80d2d13.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <h2 id="acerca-de" class="logo">Vapeland</h2>
+
+        <input type="checkbox" id="check">
+        <label for="check" class="mostrar-menu">
+            &#8801
+        </label>
+        <nav class="menu">
+            <a href="/main.html">Inicio</a>
+            <a href="../pages/acerca-de.html">Sobre Nosotros</a>
+            <a href="../pages/producto.html">Productos</a>
+            <a href="../pages/contacto.html">Contacto</a>
+            <label for="check" class="esconder-menu">
+                &#215
+            </label>
+        </nav>
+    </header>
+            <main>
+                <h2 class="venta"> 
+                <p>¿Te gustaria vender nuestros productos? completa el siguiente formulario y nos podremos en contacto con vos. </p> </h2>
+            <section class="registrar">
+                <legend><h2>Formulario de registro</h2></legend>
+                <form id="form" action="https://formsubmit.co/vapeland23032@outlook.com" method="POST">
+                    <div><label for="nombre">Nombre: </label>
+                    <input 
+                    type="text"
+                    id="nombre"
+                    name="nombre"
+                    placeholder="ingresa tu nombre">
+                    </div>
+                    <div>
+                    <label for="apellido">Apellido: </label>
+                    <input 
+                    id="apellido"
+                    name="apellido"
+                    type="text"
+                    placeholder="ingresa tu apellido">
+                    </div>
+                    <div>
+                    <label for="edad">Edad: </label>
+                    <input
+                    id="edad"
+                    name="edad"
+                    type="number"
+                    placeholder="ingresa tu edad">
+                    </div>
+                    <div>
+                    <label for="dirección">Dirección: </label>
+                    <input    
+                    type="text"
+                    id= "dirección"         
+                    name= "dirección"
+                    placeholder="dirección">
+                    </div>
+    
+                    <div>
+                    <label for="numero">Numero: </label>
+                    <input    
+                    id= "numero"         
+                    name= "numero" 
+                    type="number"
+                    placeholder="numero">
+                    </div>
+    
+                    <div>
+                    <label for="ciudad">Ciudad: </label>
+                    <input
+                    id= "ciudad"
+                    name= "ciudad"
+                    type="text"
+                    placeholder="ciudad">
+                    </div>
+    
+                    <div>
+                    <label for="cpostal">CPA: </label>
+                    <input
+                    name= "cpostal"
+                    id= "cpostal" 
+                    type="number"
+                    placeholder="ingresa tu codigo postal">
+                    </div>
+    
+                    <div><label for="telefono">Telefono: </label>
+                    <input
+                    id= "telefono"
+                    name= "telefono" 
+                    type="number"
+                    placeholder="ingrese su telefono aqui">
+                    </div>
+    
+                    <div><label for="fechadenacimiento">Nacimiento:</label>
+                    <input
+                    id= "fechadenacimiento"
+                    name= "fechadenacimiento" 
+                    type="date"
+                    placeholder="ingrese su fecha de nacimiento">
+                    </div>
+                    
+                    <div><label for="ingresesucorreoelectronico">Ingrese su correo electronico: </label>
+                        <input
+                        id= "ingresesucorreoelectronico" 
+                        name= "ingresesucorreoelectronico"
+                        type="email"
+                        placeholder="email">
+                    </div>
+    
+                    <div id="gender">
+                    <label for="gender">Genero:</label>
+                    <input type="radio" name="gender" value="Genero" >
+                    <label for="">femenino</label>
+                    <input type="radio" name="gender" value="Genero" >
+                    <label for="">masculino</label>
+                    <input type="radio" name="gender" value="Genero">
+                    <label for="">no declara</label>
+                    </div>
+                    <div>
+                        <label for="">Estudios: </label>
+                        <input name="titulo" id="titulo" type="option" list="estudios">
+                        <datalist id="estudios">
+                            <option value="Primario"></option>
+                            <option value="Secundario"></option>
+                            <option value="Terciario"></option>
+                            <option value="Universitario"></option>
+                            <option value="Otro"></option>
+                        </datalist>
+                    </div>
+                        <div>
+                            <label for="comentarios">Comentarios:</label>
+                            <div>
+                            <textarea name="comentarios" id="comentarios" cols="25" rows="4" ></textarea>
+                            </div>    
+                    </div>
+                        <div class="terminos">
+                            <label for="terms">Acepto terminos y condiciones</label>
+                            <input type="checkbox" name="terms" id="terms">
+                        </div>
+                        <div class="bottoms">
+                        <button id="submitbutton">Enviar</button>
+                        <input type="hidden" name="_next" value="http://localhost:5500/assets/pages/contacto.html">
+                        <input type="hidden" name="_captcha" value="false">
+                        </form>
+                        <script src="../js/js/form.js"></script>
+        </section>
+        </main>
+        <footer>
+            <div class="footer-content">
+                <h3>Vapeland</h3>
+                <p>Raj Template is a blog website where you will find great tutorials on web design and development. Here each tutorial is beautifully described step by step with the required source code.</p>
+                <ul class="socials">
+                    <li><a href="#"><img src="/assets/media/iconos/facebook.png" alt=""></a></li>
+                    <li><a href="#"><img src="/assets/media/iconos/twitter.png" alt=""></a></li>
+                    <li><a href="#"><img src="/assets/media/iconos/instagram.png" alt=""></a></li>
+                    <li><a href="#"><img src="/assets/media/iconos/tik-tok.png" alt=""></a></li>
+                    <li><a href="#"><img src="/assets/media/iconos/whatsapp.png" alt=""></a></li>
+                </ul>
+            </div>
+            <div class="footer-bottom">
+                <p>copyright &copy; <a href="#">Ros Nicolas - </a> <a href="#">Noguera Brian - </a> <a href="#">Aguero Rocio</a> </p>
+            </div>
+        </footer>
+    </body>
+    </html>
