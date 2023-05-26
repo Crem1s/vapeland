@@ -1,0 +1,376 @@
+/*IMPORTADOR FUENTES*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+/*RESET*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+
+
+}
+
+/*--->HEADER*/
+
+header{
+    height: 100px;
+    background: #4d4d5c;
+    padding: 0 50px;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/*--->LOGO*/
+.logo{
+    text-transform: uppercase;
+    color: #6cc091;
+    font-weight: 200;
+}
+
+
+/*--->MENU*/
+.menu a{
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 0 10px;
+    transition: 0.4s;
+}
+
+.mostrar-menu,
+.esconder-menu{
+    font-size: 30px;
+    cursor: pointer;
+    display: none;
+    transition: 0.4s;
+}
+
+.mostrar-menu{
+    order: 1;
+}
+
+.menu a:hover,
+.mostrar-menu:hover,
+.esconder-menu:hover{
+    color: #6cc091;
+   
+}
+#check {
+    display: none;
+}
+
+
+/*BANNEr*/
+#banner{
+    padding: 0px 50px;
+    background-image: url(/assets/media/images/vape1.jpg);
+    height: 45vh;
+    background-size: cover;
+    background-position: center;
+    left: 0;
+}
+
+#banner::before{
+    content: "";
+    background: rgba(77, 77, 92, 0.6);
+    position: absolute;
+    width: 100%;
+    height: 45vh;
+    left: 0;
+   /*  padding: 0px 50px; */
+}
+
+.contenido-banner{
+    position: relative;
+    color: #fff;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.contenido-banner h3{
+    font-size: 60px;
+    font-weight: 400;
+    padding: 10px 0px;
+}
+
+.contenido-banner h3 span{
+    font-weight: 600;
+}
+
+
+.boton-productos{
+    text-decoration: none;
+    color: #fff;
+    border: 2px solid #6cc091;
+    padding: 20px 30px;
+    align-self: baseline;
+    transition: all 0.4s;
+    text-transform: uppercase;
+    border-radius: 30px;
+}
+
+.boton-productos:hover{
+    background: #6CC09070;
+}
+
+/*DESTACADOS*/
+#destacados{
+    padding: 50px 50px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+#destacados img{
+    border-radius: 100%;
+    object-fit: cover;
+    width: 200px;
+    height: 200px;
+}
+#destacados div{
+    padding: 30px 30px;
+}
+
+#destacados div h4{
+    font-size: 20px;
+    color: #4d4d5c;
+    margin: 15px 0 ;
+}
+
+#destacados div p{
+    color: #4d4d5c87;
+    font-size: 18px;
+}
+
+.btn-saber-mas{
+    display: inline-block;
+    text-decoration: none;
+    color:#6cc091;
+    border: 2px solid #6cc091;
+    padding: 10px 30px;
+    border-radius: 30px;
+    margin-top: 15px;
+    transition: all 0.4s;
+}
+.btn-saber-mas:hover{
+    background: #6CC09070;
+    color: #fff;
+}
+
+
+/*TIENDAS-DESTACADAS*/
+#tiendas-destacadas{
+    padding: 50px 50px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+#tiendas-destacadas .mapa-tienda{
+    border-radius: 8%;
+   /*  object-fit: cover; */
+    width: 200px;
+    height: 200px;
+   
+}
+#tiendas-destacadas div{
+    padding: 30px 30px;
+}
+
+#tiendas-destacadas div h4{
+    font-size: 20px;
+    color: #4d4d5c;
+    margin: 15px 0 ;
+}
+
+#tiendas-destacadas div p{
+    color: #4d4d5c87;
+    font-size: 18px;
+}
+
+.btn-saber-mas{
+
+    display: inline-block;
+    text-decoration: none;
+    color:#6cc091;
+    border: 2px solid #6cc091;
+    padding: 10px 30px;
+    border-radius: 30px;
+    margin-top: 15px;
+    transition: all 0.4s;
+}
+.btn-saber-mas:hover{
+    background: #6CC09070;
+    color: #fff;
+}
+
+/*FOOTER*/
+
+footer{
+    position: relative;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #4d4d5c;
+    height: auto;
+    width: 100vw;
+
+    padding-top: 40px;
+    color: #fff;
+}
+.footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.footer-content h3{
+    color: #6cc091;
+    font-size: 2.1rem;
+    font-weight: 500;
+    text-transform: capitalize;
+    line-height: 3rem;
+}
+.footer-content p{
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 14px;
+    color: #cacdd2;
+}
+.socials{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
+}
+.socials li{
+    margin: 0 10px;
+}
+.socials a img{
+    width: 45px;
+    height: 45px;
+   
+    color: #fff;
+   
+    padding: 5px;
+
+    border-radius: 50%;
+
+}
+
+
+.footer-bottom{
+    background: #000;
+    width: 100vw;
+    padding: 20px;
+    padding-bottom: 40px;
+    text-align: center;
+}
+.footer-bottom p{
+    float: left;
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+}
+.footer-bottom p a{
+  color:#6cc091;
+  font-size: 16px;
+  text-decoration: none;
+}
+.footer-bottom span{
+    text-transform: uppercase;
+    opacity: .4;
+    font-weight: 200;
+}
+.footer-menu{
+  float: right;
+
+}
+.footer-menu ul{
+  display: flex;
+}
+.footer-menu ul li{
+padding-right: 10px;
+display: block;
+}
+.footer-menu ul li a{
+  color: #cfd2d6;
+  text-decoration: none;
+}
+.footer-menu ul li a:hover{
+  color: #6cc091;
+}
+
+@media (max-width:500px) {
+.footer-menu ul{
+  display: flex;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+}
+
+
+
+ /*--->RESPOSIVE*/
+
+@media(max-width: 768px){
+    /*HEADER*/
+    .mostrar-menu,
+    .esconder-menu{
+        display: block;
+    }
+
+    .menu{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #4d4d5c;
+        right: -100%;
+        top: 0;
+        text-align: center;
+        padding: 100px 0px;
+        z-index: 100;
+        transition: 0.8s;
+    }
+
+    .menu a {
+        display: block;
+        padding: 20px;
+       
+    }
+    .menu a:hover{
+        background-color: #6CC09070;
+        transition:  0.8s;
+    }
+    .esconder-menu{
+        position: absolute;
+        top: 40px;
+        right: 40px;
+    }
+    #check:checked ~ .menu {
+        right: 0;
+    }
+    /*BANNER*/
+    .contenido-banner span{
+        font-size: 20px;
+    }
+    .contenido-banner h3{
+        font-size: 25px;
+    }
+    #banner h3,span{
+        font-size: 40px;
+    }
+
+/*PRODUCTOS-DESTACADOS*/
+    #destacados,
+    #tiendas-destacadas{
+        flex-direction: column;}
+}
+
